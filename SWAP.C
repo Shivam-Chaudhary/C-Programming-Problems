@@ -7,9 +7,10 @@ clrscr();
 printf("Enter the two variables a and b\n");
 scanf("%d%d",&a,&b);
 printf("You entered a=%d b=%d\n",a,b);
-temp=a;
-a=b;
-b=temp;
+
+a=a+b;
+b=a-b;
+a=a-b;
 printf("Numbers after swapping a=%d b=%d",a,b);
 getch();
 }
